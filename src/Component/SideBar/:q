@@ -1,0 +1,8 @@
+[error] SideBar.scss: SyntaxError: CssSyntaxError: Missed semicolon (4:8)
+[error]   2 |   position: fixed;
+[error]   3 |   z-index: 10;
+[error] > 4 |   top :0
+[error]     |        ^
+[error]   5 |   background: black;
+[error]   6 | }
+[error]   7 |

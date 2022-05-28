@@ -1,0 +1,79 @@
+
+.sidebar {
+  position: fixed;
+  z-index: 10;
+  top: 0px;
+  height: 100vh;
+  background: white;
+  border: 1px solid #edeced;
+  transition: all 0.5s;
+  width: 300px;
+  border-left: 1px solid #edeced;
+
+  .link-list {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    position: relative;
+
+    .children {
+      position: absolute;
+      top: -10px;
+      right: -287px;
+      background: white;
+
+      &.true {
+        display: flex;
+      }
+
+      &.false {
+        display: none;
+      }
+    }
+
+    div {
+      width: 100%;
+      display: flex;
+      padding: 10px;
+      position: relative;
+      flex-direction: column;
+      border: 1px solid #edeced;
+      width: 100%;
+      transition: all 0.5s;
+    }
+  }
+
+  a {
+    border: 1px solid #edeced;
+    width: 100%;
+    transition: all 0.5s;
+  }
+
+  a:hover {
+    background: #edeced;
+  }
+
+  button {
+    position: absolute;
+    left: 300px;
+    width: 50px;
+    height: 50px;
+    top: 190px;
+    border-radius: 0 50px 50px 0;
+    background: green;
+    border: 1px solid #edeced;
+
+    font-weight: bold;
+  }
+
+  &.false {
+    transition: all 0.5s;
+    left: -300px;
+  }
+
+  a {
+    padding: 10px;
+  }
+
+  a.active {}
+}
